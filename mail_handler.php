@@ -9,6 +9,8 @@
         $subject = $subject;
         $message = "Nombre: " .$name,"\n"."Dejo el siguiente mensaje: "."\n\n".$message;
         $headers = "De: " .$mail;
+        
+        mail($to,$subject,$message,$headers);
 
         if(mail($to,$subject,$message,$headers)){
             echo "<h1> Mensaje enviado, nos contactaremos enseguida con usted " .$name.". </h1>";
