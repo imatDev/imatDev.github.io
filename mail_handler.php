@@ -2,7 +2,7 @@
     if(isset($_POST['submit'])){
         $name=$_POST['name'];
         $mail=$_POST['email'];
-        $subjet=$_POST['subject'];
+        $subject=$_POST['subject'];
         $message = $_POST['message'];
 
         $to = 'contacto@i-mat.com.mx';
