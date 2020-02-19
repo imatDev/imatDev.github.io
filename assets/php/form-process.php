@@ -1,6 +1,6 @@
 <?php
 
-$errorMSG = "";
+$errorMSG = "Error";
 
 // NAME
 if (empty($_POST["name"])) {
@@ -32,7 +32,7 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "email@gmail.com";
+$EmailTo = "4buysalda@gmail.com";
 $Subject = "New Message Received";
 
 // prepare email body text
