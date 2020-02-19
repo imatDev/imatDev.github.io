@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>IMAT -Instituto de Medios Avanzados y Tecnol&oacute;gicos</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
@@ -595,7 +597,7 @@
         <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">   
           <div class="col-lg-7 col-md-12 col-sm-12">
             <div class="contact-block">
-              <form id="contactForm">
+              <form action=mail_handler.php method= "POST"  name = form id="contactForm">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -611,17 +613,17 @@
                   </div>
                    <div class="col-md-12">
                     <div class="form-group">
-                      <input type="text" placeholder="Asunto" id="msg_subject" class="form-control" required data-error="Por favor ingrese un Asunto">
+                      <input type="text" placeholder="Asunto" id="msg_subject" class="form-control" name = "subject" required data-error="Por favor ingrese un Asunto">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group"> 
-                      <textarea class="form-control" id="message" placeholder="Escriba su mensaje" rows="7" data-error="Write your message" required></textarea>
+                      <textarea class="form-control" id="message" placeholder="Escriba su mensaje" rows="7" name = "subject" data-error="Write your message" required></textarea>
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="submit-button text-left">
-                      <button class="btn btn-common" id="form-submit" type="submit">Enviar correo</button>
+                      <button class="btn btn-common" id="form-submit" type="submit" name = "submit">Enviar correo</button>
                       <div id="msgSubmit" class="h3 text-center hidden"></div> 
                       <div class="clearfix"></div> 
                     </div>
